@@ -19,7 +19,7 @@ export default function Header({name}){
             
 
             <TouchableOpacity activeOpacity={0.9} style={styles.buttonUser}>
-                <Feather name="user" size={27} color="FFF"/>
+                <Feather name="user" size={27} color="#FFF"/>
             </TouchableOpacity>
 
          </View>
@@ -34,11 +34,11 @@ const styles = StyleSheet.create({
         flexDirection: 'row', 
         paddingStart: 16,
         paddingEnd : 16,
-        paggingBpttom: 44,
+        paddingBottom: 44,
     },
     content:{
         flex: 1,
-        allingItems : 'center',
+        alignItems : 'center',
         flexDirection: 'row',
         justifyContent: 'space-between'
     },
