@@ -1,16 +1,19 @@
 import React from "react";
-import {View,
+import {
+    View,
     Text,
-    StyleSheet
+    StyleSheet,
+    TouchableOpacity
 
 }from 'react-native;'
 
-export default function Movements( ) {
+export default function Movements({data}) {
     return (
-      <View>
-        <Text> TESTE 123 </Text>
-      </View>
-    );
+      <TouchableOpacity style={styles.container}>
+      <Text style={styles.date}>{data.date}</Text>
+      </TouchableOpacity>
+      );
+
 }
 
 const styles = StyleSheet.create({
