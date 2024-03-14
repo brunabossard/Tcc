@@ -44,13 +44,13 @@ export default function Home() {
      
        <Text style={styles.title}>Ultimas movimentações</Text>
 
-       <FlatList>
+       <FlatList
         style={styles.list}
         data={list}
         keyExtractor={(item) => String(item.id)}
         showsVerticalScrollIndicator={false}
         renderItem={({item}) => <Text>{item.label}</Text>}
-       </FlatList>
+       />
 
     </View>
   )
@@ -69,8 +69,8 @@ const styles = StyleSheet.create({
     marginTop:14,
   },
   list:{
-    marginStart:'14',
-    marginEnd:'14',
+    marginStart: 14,
+    marginEnd: 14,
     
 
   }
